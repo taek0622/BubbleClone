@@ -15,9 +15,22 @@ class FriendsViewController: UITableViewController {
         case recommendFridends
     }
 
+    private var dataSource: UITableViewDiffableDataSource<Section, UUID>!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(FriendsTableViewCell.self, forCellReuseIdentifier: FriendsTableViewCell.identifier)
+        dataSource = UITableViewDiffableDataSource<Section, UUID>(tableView: tableView, cellProvider: { tableView, indexPath, itemIdentifier in
+            let cell = tableView.dequeueReusableCell(withIdentifier: FriendsTableViewCell.identifier, for: indexPath)
+            return cell
+        })
+        tableView.dataSource = dataSource
 
+        var snapshot = NSDiffableDataSourceSnapshot<Section, UUID>()
+        snapshot.appendSections(Section.allCases)
+        snapshot.appendItems([UUID()], toSection: .myProfile)
+        snapshot.appendItems([UUID(), UUID()], toSection: .myFriends)
+        snapshot.appendItems([UUID(), UUID()], toSection: .recommendFridends)
+        dataSource.apply(snapshot)
     }
 
     }

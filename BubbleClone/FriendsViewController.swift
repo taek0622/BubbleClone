@@ -9,6 +9,12 @@ import UIKit
 
 class FriendsViewController: UITableViewController {
 
+    private enum Section: CaseIterable {
+        case myProfile
+        case myFriends
+        case recommendFridends
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

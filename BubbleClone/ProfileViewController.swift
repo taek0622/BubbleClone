@@ -37,6 +37,9 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
+        navigationItem.leftBarButtonItem = UIBarButtonItem(systemItem: .close, primaryAction: UIAction { _ in
+            self.dismiss(animated: true)
+        })
 
         // Do any additional setup after loading the view.
     }

@@ -9,6 +9,31 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    private lazy var backgroundImage: UIImageView = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        return $0
+    }(UIImageView())
+
+    private lazy var thumbnailImage: UIImageView = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        return $0
+    }(UIImageView())
+
+    private lazy var nickName: UILabel = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        return $0
+    }(UILabel())
+
+    private lazy var statusMessage: UILabel = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        return $0
+    }(UILabel())
+
+    private let editProfileButton: UIButton = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        return $0
+    }(UIButton())
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow

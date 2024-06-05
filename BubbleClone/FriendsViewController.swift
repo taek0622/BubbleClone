@@ -32,6 +32,13 @@ class FriendsViewController: UITableViewController {
         snapshot.appendItems([UUID(), UUID()], toSection: .recommendFridends)
         dataSource.apply(snapshot)
     }
+}
 
+extension FriendsViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let profileView = UINavigationController(rootViewController: ProfileViewController())
+        profileView.modalPresentationStyle = .fullScreen
+        tableView.deselectRow(at: indexPath, animated: true)
+        present(profileView, animated: true)
     }
 }

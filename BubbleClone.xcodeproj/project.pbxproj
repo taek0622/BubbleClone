@@ -15,6 +15,7 @@
 		2649A5032C0F1F2A007FCC55 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649A5022C0F1F2A007FCC55 /* FriendsViewController.swift */; };
 		2649A5052C0F1F35007FCC55 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649A5042C0F1F35007FCC55 /* ChatsViewController.swift */; };
 		2649A5072C0F1F41007FCC55 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649A5062C0F1F41007FCC55 /* MoreViewController.swift */; };
+		2649A50D2C1066C8007FCC55 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649A50C2C1066C8007FCC55 /* FriendsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2649A5022C0F1F2A007FCC55 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		2649A5042C0F1F35007FCC55 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		2649A5062C0F1F41007FCC55 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		2649A50C2C1066C8007FCC55 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				2649A4F02C0F1D8E007FCC55 /* SceneDelegate.swift */,
 				2649A4F22C0F1D8E007FCC55 /* ViewController.swift */,
 				2649A5022C0F1F2A007FCC55 /* FriendsViewController.swift */,
+				2649A50C2C1066C8007FCC55 /* FriendsTableViewCell.swift */,
 				2649A5042C0F1F35007FCC55 /* ChatsViewController.swift */,
 				2649A5062C0F1F41007FCC55 /* MoreViewController.swift */,
 				2649A4F72C0F1D92007FCC55 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				2649A5032C0F1F2A007FCC55 /* FriendsViewController.swift in Sources */,
 				2649A4F32C0F1D8E007FCC55 /* ViewController.swift in Sources */,
 				2649A5052C0F1F35007FCC55 /* ChatsViewController.swift in Sources */,
+				2649A50D2C1066C8007FCC55 /* FriendsTableViewCell.swift in Sources */,
 				2649A5072C0F1F41007FCC55 /* MoreViewController.swift in Sources */,
 				2649A4EF2C0F1D8E007FCC55 /* AppDelegate.swift in Sources */,
 				2649A4F12C0F1D8E007FCC55 /* SceneDelegate.swift in Sources */,

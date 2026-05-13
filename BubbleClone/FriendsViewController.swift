@@ -16,11 +16,14 @@ class FriendsViewController: UITableViewController {
     }
 
     private var dataSource: UITableViewDiffableDataSource<Section, UUID>!
+    var colors: [UIColor] = [.blue, .green, .red, .orange, .yellow, .black, .purple, .brown, .white, .cyan, .gray]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(FriendsTableViewCell.self, forCellReuseIdentifier: FriendsTableViewCell.identifier)
         dataSource = UITableViewDiffableDataSource<Section, UUID>(tableView: tableView, cellProvider: { tableView, indexPath, itemIdentifier in
             let cell = tableView.dequeueReusableCell(withIdentifier: FriendsTableViewCell.identifier, for: indexPath)
+            cell.backgroundColor = self.colors[indexPath.row % self.colors.count]
             return cell
         })
         tableView.dataSource = dataSource
